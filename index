@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nuestro Jardín 🌹</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Nuestro Jardín</h1>
+
+    <p class="subtitle">
+
+        Cada vez que vuelves,
+        haces florecer un pedacito
+        de nuestra historia.
+
+    </p>
+
+    <div id="flower">
+
+        🌱
+
+    </div>
+
+    <button id="waterButton">
+
+        💧 Hoy vine a visitarte
+
+    </button>
+
+    <section id="moods">
+
+        <h2>
+
+            ¿Cómo te sientes hoy?
+
+        </h2>
+
+        <div class="moodButtons">
+
+            <button data-mood="happy">😊 Feliz</button>
+
+            <button data-mood="love">🥰 Enamorada</button>
+
+            <button data-mood="sad">😔 Triste</button>
+
+            <button data-mood="stress">😣 Estresada</button>
+
+            <button data-mood="tired">😴 Cansada</button>
+
+            <button data-mood="normal">🤍 Normal</button>
+
+        </div>
+
+    </section>
+
+    <div id="message">
+
+        Bienvenida a nuestro jardín ❤️
+
+    </div>
+
+    <div id="stats">
+
+        🌱 Días que has cuidado el jardín:
+
+        <span id="days">
+
+            0
+
+        </span>
+
+    </div>
+
+</div>
+
+<script src="messages.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
