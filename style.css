@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    font-family:"Poppins",sans-serif;
+
+    background:linear-gradient(
+    180deg,
+    #0B1723,
+    #122A1F,
+    #203A28
+    );
+
+    color:white;
+
+}
+
+.container{
+
+    width:90%;
+    max-width:600px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:25px;
+
+    padding:40px;
+
+    text-align:center;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
+
+}
+
+h1{
+
+    font-family:"Cinzel",serif;
+
+    font-size:42px;
+
+    color:#F7E7CE;
+
+    margin-bottom:15px;
+
+}
+
+.subtitle{
+
+    color:#D7D7D7;
+
+    font-size:18px;
+
+    line-height:1.7;
+
+    margin-bottom:40px;
+
+}
+
+#flower{
+
+    font-size:120px;
+
+    margin:25px 0;
+
+    transition:.4s;
+
+}
+
+#waterButton{
+
+    border:none;
+
+    background:#4E7D5C;
+
+    color:white;
+
+    padding:16px 28px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+#waterButton:hover{
+
+    transform:scale(1.05);
+
+    background:#679E73;
+
+}
+
+#moods{
+
+    margin-top:45px;
+
+}
+
+#moods h2{
+
+    margin-bottom:20px;
+
+    font-size:22px;
+
+}
+
+.moodButtons{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:12px;
+
+}
+
+.moodButtons button{
+
+    border:none;
+
+    padding:14px;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    background:#F7E7CE;
+
+    color:#222;
+
+    font-size:16px;
+
+    transition:.25s;
+
+}
+
+.moodButtons button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+#message{
+
+    margin-top:35px;
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:20px;
+
+    line-height:1.7;
+
+    font-size:18px;
+
+    min-height:100px;
+
+}
+
+#stats{
+
+    margin-top:30px;
+
+    font-size:18px;
+
+    color:#F7E7CE;
+
+}
