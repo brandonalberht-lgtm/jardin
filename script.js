@@ -125,3 +125,98 @@ function randomMessage(mood){
     list[random];
 
 }
+//=============================
+// ¿YA VINO HOY?
+//=============================
+
+function visitedToday(){
+
+    const today = new Date().toDateString();
+
+    return garden.lastVisit === today;
+
+}
+
+//=============================
+// REGAR
+//=============================
+
+function waterGarden(){
+
+    if(visitedToday()){
+
+        message.textContent =
+        "🌹 Ya viniste a visitarme hoy. Gracias por volver ❤️";
+
+        return;
+
+    }
+
+    garden.lastVisit =
+    new Date().toDateString();
+
+    garden.days++;
+
+    if(garden.level < flowers.length-1){
+
+        garden.level++;
+
+    }
+
+    updateFlower();
+
+    updateDays();
+
+    randomMessage(garden.mood);
+
+    saveGarden();
+
+}
+//=============================
+// ESTADO DE ÁNIMO
+//=============================
+
+moodButtons.forEach(button=>{
+
+    button.addEventListener("click",()=>{
+
+        garden.mood =
+        button.dataset.mood;
+
+        randomMessage(garden.mood);
+
+        saveGarden();
+
+    });
+
+});
+
+//=============================
+// INICIAR
+//=============================
+
+function start(){
+
+    loadGarden();
+
+    updateFlower();
+
+    updateDays();
+
+    randomMessage(garden.mood);
+
+}
+
+start();
+
+//=============================
+// BOTÓN
+//=============================
+
+waterButton.addEventListener(
+
+"click",
+
+waterGarden
+
+);
